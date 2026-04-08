@@ -4,8 +4,8 @@ Software Used: Visual Studio Code
 
 ============================================================
 
-1. PROJECT SUMMARY
-------------------
+📚 1. PROJECT SUMMARY
+----------------------
 Harvest Contribution is a non-profit web platform focused 
 on fighting hunger through community gardens. Built with 
 HTML5, CSS3, and JavaScript, it features dynamic donation 
@@ -13,7 +13,7 @@ processing, user authentication, and interactive galleries
 to coordinate volunteer efforts and sustainable agricultural 
 education for vulnerable communities.
 
-2. PROJECT COMPONENTS
+🛠️ 2. PROJECT COMPONENTS
 ---------------------
 The project is organized into three primary layers:
 
@@ -44,8 +44,8 @@ D. DOCUMENTATION
   Complete project documentation covering research, planning 
   phases, target audience analysis, and implementation steps.
 
-3. HOW TO RUN
--------------
+▶️ 3. HOW TO RUN
+-----------------
 1. Maintain the directory structure (HTML in root, CSS in /CSS, 
    JavaScript in /JavaScript).
 2. Open 'index.html' in any modern web browser.
