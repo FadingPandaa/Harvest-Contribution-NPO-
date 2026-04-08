@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+    <div class="background-color" style="background-color: rgb(212, 219, 21);">
+        <header>
+            <center><h1><u>Contact Us</u></h1></center>
+        </header>
+
+        <nav>
+        <center>
+            <table border="2px black">
+                <tr>
+                    <td><a href="index.html">Homepage</a></td>
+                    <td><a href="about us.html">About Us</a></td>
+                    <td><a href="services.html">Services</a></td>
+                    <td><a href="gallery.html">Gallery</a></td>
+                    <td><a href="contact us.html">Contact Us</a></td>
+                    <td><a href="Donations & Sign Up.html">Help Us Do More</a></td>
+                    <td><a href="login.html">Login</a></td>
+                </tr>
+            </table>
+        </center>
+        </nav>
+    </div>
+
+    <article>
+    <center>
+    <div class="background-color" style="background-color: aqua;">
+        <div class="form-container">
+            
+            <h2>Contact Us</h2>
+            
+            <form class="redirect" action="thank you for contacting us.html" method="post">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your query here..." required></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <br>
+                <p>If you would like to read more about us, please click the images below</p>
+            
+                <a href="https://www.harvesthope.org/get-involved/host-food-drive">
+                    <img src="Images/Website.jpg" width="15%" height="30%">
+                </a>
+                <a href="https://www.instagram.com/harvesthopefb">
+                    <img src="Images/Insta-logo.jfif" width="15%" height="30%">
+                </a>
+            <br>
+                <img src="Images/Harvest Contribution.png" width="35%" height="65%"alt="Team Photo" class="lightbox-trigger">
+            </center>
+            <center><b><i><h3>Empowering Hands, Growing Lands.</h3></i></b></center>
+        </div>
+    </div>
+    </article>
+    
+    <script src="JavaScript/transition link.js"></script>
+    <script src="JavaScript/lightbox.js"></script>
+    <footer>
+        <p>
+            <script>
+                var theDate = new Date();
+                document.write("&copy; " + theDate.getFullYear() + " Harvest Contribution. All rights reserved.");
+            </script>
+        </p>
+    </footer>
+    <!-- Lightbox Container -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</body>
+</html>

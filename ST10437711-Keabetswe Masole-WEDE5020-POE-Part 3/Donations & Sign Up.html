@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Us Help Others</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+    <div class="background-color" style="background-color: rgb(179, 205, 74);">
+        <header>
+            <center><h1><u>Donate</u></h1></center>
+        </header>
+    
+        <nav>
+        <center>
+            <table border="2px black">
+                <tr>
+                    <td><a href="index.html">Homepage</a></td>
+                    <td><a href="about us.html">About Us</a></td>
+                    <td><a href="services.html">Services</a></td>
+                    <td><a href="gallery.html">Gallery</a></td>
+                    <td><a href="contact us.html">Contact Us</a></td>
+                    <td><a href="Donations & Sign Up.html">Help Us Do More</a></td>
+                    <td><a href="login.html">Login</a></td>
+                </tr>
+            </table>
+        </center>
+        </nav>
+    </div>
+
+    <article>
+    <div class="background-color" style="background-color: aqua;">
+        <div class="donation-area">
+            <center><h1><U>Donate to Help Us And More Communities</U></h1></center>
+
+            <p>Your generosity helps us provide more crops, transport and help schools and communities in need. 
+                Every donation makes a difference and brings us one step closer to ensuring everyone has a place to grow crops and provide health, 
+                non-generic food to the communities in need.
+            </p>
+
+            <form class="donation-options" action="Thanks For Signing Up.html" method="post">
+
+                <label>$25 - Help us buy more seeds to grow our crops.</label>
+                <br>
+                <label>$100 - Help buy groceries to cook for schools.</label>
+                <br>
+                <label>$200 - Allows us to do everything at once and donate the change to the community and/or school in need.</label>
+                <br>
+                <label>$$$ - If you'd like, you also have the option to give a more generous amount to help.</label>
+                <br>
+
+                <div class="own-amount">
+                    <label for="amount">Amount:</label>
+                    <input type="text" id="amount" name="donation-amount" placeholder="Enter amount" required>
+                    <span class="error" id="error-message" style="display:none;">(Please enter a valid number.)</span>
+                </div>
+
+                <button type="submit">Donate</button>
+            </form>
+        
+            <p class="impact">Your support is very much appreciated not only by us, but also the people that you're helping too.
+                Thank you for you.</p>
+        </div>
+        
+        <center><img src="Images/Harvest Contribution.png" width="35%" height="65%" class="lightbox-trigger"></center>
+        <center><b><i><h3>Empowering Hands, Growing Lands.</h3></i></b></center>
+    </div>
+    </article>
+    
+    <footer>
+        <p>
+            <script>
+                var theDate = new Date();
+                document.write("&copy; " + theDate.getFullYear());
+                document.write(" Harvest Contribution. All rights reserved.");
+            </script>
+        </p>
+    </footer>
+    <!-- Lightbox Container -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <script src="JavaScript/lightbox.js"></script>
+</body>
+</html>

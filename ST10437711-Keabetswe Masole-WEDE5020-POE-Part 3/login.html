@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+
+    <center>
+    <style>
+        /* Wrapper styles */
+        .wrapper {
+            background-color: aqua;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #7e9823;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Title and heading styles */
+        h1 {
+            color: #00796b;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        /* Input and button styles */
+        .input-box {
+            margin-bottom: 15px;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #2ec547;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+
+        /* Error message styles */
+        #login-error, #signup-error {
+            color: red;
+            font-size: 14px;
+        }
+
+        /* Menu button styles */
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .menu button {
+            background-color: #80deea;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            width: 45%;
+        }
+        .menu button:hover {
+            background-color: #4dd0e1;
+        }
+    </style>
+</head>
+
+<script>
+    // Redirect to login page if not logged in
+    if (localStorage.getItem("loggedIn") !== "true") {
+        window.location.href = "login.html";
+    }
+</script>
+
+<body>
+    <nav class="navbar">
+        <center><table>
+            <table border="2px black">
+
+            <td><a href="index.html">Homepage</a></td>
+            <td><a href="about us.html">About Us</a></td>
+            <td><a href="services.html">Services</a></td>
+            <td><a href="gallery.html">Gallery</a></td>
+            <td><a href="contact us.html">Contact Us</a></td>
+            <td><a href="Donations & Sign Up.html">Help Us Do More</a></td>
+            <td><a href="login.html">Login</a></td>
+        </table></center>
+    </nav>
+
+    <div class="wrapper">
+        <div class="menu">
+            <button id="login-btn" onclick="showLogin()">Login</button>
+            <button id="signup-btn" onclick="showSignup()">Signup</button>
+        </div>
+
+        <form id="login-form" action="" style="display: block;" onsubmit="validateLogin(event)">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="login-username" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="login-password" placeholder="Password" required>
+            </div>
+            <div class="remember forgot">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit">Login</button>
+            <p id="login-error"></p>
+        </form>
+
+        <form id="signup-form" action="" style="display: none;" onsubmit="validateSignup(event)">
+            <h1>Signup</h1>
+            <div class="input-box">
+                <input type="text" id="signup-username" placeholder="Username (min 5 characters)" required>
+            </div>
+            <div class="input-box">
+                <input type="email" id="signup-email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="signup-password" placeholder="Password (min 8 characters)" required>
+            </div>
+            <button type="submit">Signup</button>
+            <p id="signup-error"></p>
+        </form>
+    </div>
+
+    <script src="JavaScript/login and sign up.js"></script>
+</center>
+
+</body>
+</html>
