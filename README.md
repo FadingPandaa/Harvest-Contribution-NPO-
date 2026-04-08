@@ -57,5 +57,3 @@ D. DOCUMENTATION
 * Languages: HTML5, CSS3, JavaScript.
 * Features: Client-side validation, Dynamic DOM manipulation, 
   Responsive Design, and Event-driven UI.
-
-============================================================
